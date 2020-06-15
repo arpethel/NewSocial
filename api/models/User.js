@@ -6,6 +6,14 @@
 
 module.exports = {
 
+  customToJSON: function () {
+    // Return a shallow copy of this record with the password and ssn removed.
+    return {id: this.id,
+      fullName: this.fullName,
+      emailAddress: this.emailAddress
+    }
+  },
+
   attributes: {
 
     //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
