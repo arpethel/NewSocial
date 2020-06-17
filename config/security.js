@@ -44,6 +44,7 @@ module.exports.security = {
   *                                                                           *
   ****************************************************************************/
 
+  // this needs to be set to true, set to false for testing
   csrf: false
 
 };
